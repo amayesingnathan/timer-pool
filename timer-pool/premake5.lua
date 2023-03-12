@@ -21,7 +21,8 @@ project "timer-pool"
 
     includedirs
     {
-        "%{IncludeDir.timer-pool}",
+        "%{IncludeDir.libtimers}",
+        "%{IncludeDir.magic_enum}",
     }
 
 	links

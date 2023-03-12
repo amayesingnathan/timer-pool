@@ -25,6 +25,8 @@ workspace "timer-pool"
 outputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
-IncludeDir["timer-pool"] 	= "%{wks.location}/timer-pool/src"
+IncludeDir["libtimers"] 	= "%{wks.location}/timer-pool/src"
+IncludeDir["magic_enum"]    = "%{wks.location}/timer-pool/dependencies/magic_enum"
 
 include "timer-pool"
+include "timer-test"
